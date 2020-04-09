@@ -10,10 +10,14 @@ array_price = ["$6558.07", "$468.95", "$0.487526", "$762.84", "$8.86", "$85.26",
 #puts array_price.size #1605
 
 hash_crypto = array_money.zip(array_price).to_h
+
+print array_money.zip(array_price).to_h
 # print array_money.zip(array_price).to_h fait apparaître un hash sous la forme {"Bitcoin"=>"$6558.07", "Ethereum"=>"$468.95", "XRP"=>"$0.487526", ...}
 
+puts " \n"
+puts " \n"
+
 def big_value
-	hash_crypto
 	puts "1) Voici la ou les crypto qui ont la plus grosse valeur."
 	print "> #{}"
 	puts " \n"
@@ -21,7 +25,6 @@ def big_value
 end
 
 def small_value
-	hash_crypto
 	puts "2) Voici la ou les crypto qui ont la plus petite valeur."
 	print "> #{}"
 	puts " \n"
@@ -29,7 +32,6 @@ def small_value
 end
 
 def coin
-	hash_crypto
 	puts "3) Voici le nombre de crypto contenant le mot coin."
 	print "> #{}"
 	puts " \n"
@@ -37,7 +39,6 @@ def coin
 end
 
 def less_6000
-	hash_crypto
 	puts "4) Les devises, dont le cours est inférieur à 6000."
 	print "> #{}"
 	puts " \n"
@@ -45,7 +46,6 @@ def less_6000
 end
 
 def more_6000
-	hash_crypto
 	puts "5) La devise la plus chère parmi celles dont le cours est inférieur à 6000."
 	print "> #{}"
 	puts " \n"
